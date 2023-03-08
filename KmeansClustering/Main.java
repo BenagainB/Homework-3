@@ -75,10 +75,10 @@ public class Main {
                     List<Point> clusterPoints = myClustersDone[i].getPoints();
                     for (int j=0; j < clusterPoints.size() ; j++){
                         if(j == clusterPoints.size()-1){
-                            pr.print(clusterPoints.get(j).toString());
+                            pr.print(clusterPoints.get(j).toString().replace("(", "").replace(")",""));
                         }
                         else{
-                            pr.println(clusterPoints.get(j).toString());
+                            pr.println(clusterPoints.get(j).toString().replace("(", "").replace(")",""));
                         }
                     }
                     pr.close();
